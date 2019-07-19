@@ -8,8 +8,8 @@ import groovy.transform.ToString
 @ToString
 @Immutable class Cust {
 
-    String x
-    String y
+    String attributeX
+    String attributeY
 
 }
 
