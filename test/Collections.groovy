@@ -56,3 +56,39 @@ println map.keySet()
 println map.values()
 
 
+
+println "......"
+//Collection Methods
+
+List favs = [100, 200, 300, 10000]
+for (num in favs)
+{
+    println num
+}
+
+favs.each{println it}
+
+
+favs.eachWithIndex{ int entry, int i -> println "$entry $i"}
+
+//find all
+
+List perfSquare = favs.findAll {def x = Math.sqrt(it); if (x.toInteger()*x.toInteger() == it) return true }
+println perfSquare
+
+//Collect
+
+List numbers = [10,20,30,40,50]
+
+List listNumTimesTen = []
+numbers.each{numb -> listNumTimesTen << numb*10}
+
+println numbers
+println listNumTimesTen
+
+List newWayTimeTen = numbers.collect{num -> num*10}
+println newWayTimeTen
+
+
+
+
