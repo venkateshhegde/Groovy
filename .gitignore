@@ -1,2 +1,6 @@
 
 *.class
+
+test/a\.txt
+
+test/a\.xml
