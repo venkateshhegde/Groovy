@@ -127,7 +127,7 @@ println folderNameOnWindows
 
 //demo
 
-import java.util.regex.*;
+import java.util.regex.Pattern;
 Pattern regexPattern = Pattern.compile("a\\\\b")
 println regexPattern
 println regexPattern.class

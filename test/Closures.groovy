@@ -36,7 +36,6 @@ timesTen (3) {println it}
 
 10.times{println it}
 
-import java.util.Random
 Random randomeNum = new Random()
 2.times {println randomeNum.nextDouble()}
 
