@@ -21,3 +21,28 @@ new File(folder).eachFile {
 
 
 }
+
+//Threading
+def t = new Thread( {
+
+    println("hello" + Thread.currentThread().name)
+
+})
+
+t.start()
+
+sleep(1000)
+Thread.start('HELLOONE') {
+    sleep 1000
+    println("hello" + Thread.currentThread().name)
+}
+println( '100')
+
+
+//JDBC
+//
+
+//Templates
+//LIke JSPs!
+
+//Dates..
